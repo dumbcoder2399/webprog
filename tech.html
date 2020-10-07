@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Tech Quiz</title>
+    
+      <link rel="stylesheet" href="css/quiz.css">
+                
+ 
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type='text/javascript'></script>
+    
+     <script type="text/javascript">
+	$(document).ready(function() {
+    $('label').click(function() {
+        $('label').removeClass('worngans');
+        $(this).addClass('worngans');
+    });
+});
+	</script>
+  
+      
+    
+   </head>
+   <body>
+
+
+     
+
+
+
+
+
+
+
+
+
+      
+<div class="scp-quizzes-main">
+   <div class="scp-quizzes-data">
+      <div id='demo'></div>
+   </div>
+   
+   
+   <script>
+var parser, xmlDoc;
+var text = "<bookstore><book><title>1. What is the output of the below c code?</title><author>Giada De Laurentiis</author><year>2005</year></book></bookstore>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo").innerHTML ="<h3> "+ xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h3>";
+</script>
+
+
+<div class="scp-quizzes-data">
+  <h3>1. What is the output of the below c code?</h3>
+    <pre>#include&lt;stdio.h>	
+main() 
+{
+   int x = 5;
+   
+   if(x=5)
+   {	
+      if(x=5) printf("Hello");
+   } 
+   printf("World");
+}</pre>
+<br/>
+    <input type="radio" id="HelloWorld" name="question1">
+       <label for="HelloWorld">1. HelloWorld</label><br/>
+    <input type="radio"  name="question1">
+       <label>2. World</label><br/>
+    <input type="radio" name="question1">
+       <label>3. WorldHello</label> <br/>
+    <input type="radio" name="question1">
+     <label>4. Hello</label> 
+ </div>
+ <div class="scp-quizzes-data">
+  <h3>2. How would you insert pre-written code into a current program ?</h3>
+    <pre>#include&lt;stdio.h>	
+main() 
+{
+   int x = 5;
+   
+   if(x=5)
+   {	
+      if(x=5) printf("Hello");
+   } 
+   printf("World");
+}</pre>
+<br/>
+    <input type="radio" name="question2">
+       <label>1. #read&lt;file></label><br/>
+    <input type="radio"  name="question2">
+       <label>2. #get &lt;file></label><br/>
+    <input type="radio" name="question2" id="inculdefile">
+       <label for="inculdefile">3. #include &lt;file></label> <br/>
+    <input type="radio" name="question2">
+     <label>4. #pre &lt;file></label> 
+ </div>
+</div>
+
+
+</body></html>

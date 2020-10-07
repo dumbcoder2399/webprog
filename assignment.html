@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Login Page</title>
+	<style>
+	body {
+		margin: 0px;
+		background-color: #96f8ff;
+		background-image: url('1.png');
+		color: #EEEEEE;
+		font-family: Arial, Helvetica, sans-serif;
+		background-repeat: no-repeat;
+        background-size: 100%;
+	}
+	
+	#main {
+		width: 600px;
+		height: 260px;
+		margin-left: auto;
+		margin-right: auto;
+		border-radius: 5px;
+		padding-left: 10px;
+		margin-top: 100px;
+		padding-top: 20px;
+	}
+	
+	#main table {
+		font-family: "Comic Sans MS";
+	}
+	
+	#main .btn:hover {
+		background-color: #FF1100;
+		outline: none;
+		border-radius: 2px;
+		color: #EEEEEE;
+		border: 1px solid #EEEEEE;
+	}
+	</style>
+	<script>
+	function login() {
+		var uname = document.getElementById("email").value;
+		var pwd = document.getElementById("pwd1").value;
+		if(uname == '') {
+			alert("please enter user name.");
+		} else if(pwd == '') {
+			alert("enter the password");
+		} else if(pwd == 'login') {
+			alert('Login Succesful ! Press OK');
+			window.location = "index.html";
+		} else {
+			alert('Incorrect Password');
+		}
+	}
+	</script>
+</head>
+
+<body>
+	<div id="main">
+		<div class="h-tag">
+			<h2>Welcome To My Login Page</h2> </div>
+		<div class="login">
+			<table cellspacing="2" align="center" cellpadding="8" border="0">
+				<tr>
+					<td>Enter User Name :</td>
+					<td>
+						<input type="text" id="email" class="tb" />
+					</td>
+				</tr>
+				<tr>
+					<td>Enter Password :</td>
+					<td>
+						<input type="password" id="pwd1" class="tb" />
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="submit" value="Login" class="btn" onClick="login()" />
+					</td>
+				</tr>
+			</table>
+		</div>
+		<br /><br /><br /><br /><br /><br /><br /><br />
+		<p style="color:blue;">Hint: User Name can be any name except blank.</p>
+		<p style="color:blue;">Password is "login".</p>
+		<p style="color:blue;">Multiple Anchor tags are present on that page.</p>
+	</div>
+</body>
+
+</html>

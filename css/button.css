@@ -1,0 +1,105 @@
+body {
+    background: #130629;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#frozen-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  button {
+    border: 0;
+    margin: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 150px 150px;
+    border-radius: 50px;
+    color: white;
+    outline: none;
+    position: relative;
+  }
+  
+  button:before{
+    content: '';
+    display: block;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.4) 50%);
+    background-size: 210% 100%;
+    background-position: right bottom;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    right:0;
+    left: 0;
+    border-radius: 50px;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+  }
+  
+  .red {
+     background-image: linear-gradient(to right, #e2361f, #eecd61);
+     box-shadow: 0 4px 15px 0 rgba(196, 145, 49, 0.75);
+  }
+
+  .green {
+    background-image: linear-gradient(to right, #075820, #40e495);
+    box-shadow: 0 4px 15px 0 rgba(49, 196, 190, 0.75);
+  }
+  
+  
+  .pink {
+    background-image: linear-gradient(to right, #e125e1, #74085c);
+    box-shadow: 0 4px 15px 0 rgba(156, 104, 190, 0.75);
+  }
+  
+
+  .purple {
+     background-image: linear-gradient(to right, #1a0aa5, rgb(9, 136, 158));
+     box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+  }
+
+
+  .pink:hover:before{
+    background-position: left bottom;
+  }
+
+  .red:hover:before {
+    background-position: left bottom;
+  }
+    
+  .purple:hover:before {
+    background-position: left bottom;
+  }
+  
+  .green:hover:before {
+    background-position: left bottom;
+    
+  }

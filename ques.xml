@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QUIZ>
+    <QUESTIONS>
+        <QUES>What is the output of the below c code?</QUES>
+        <CODE>
+        #include&lt;stdio.h>
+        main() 
+        {
+        int x = 5;
+        
+        if(x=5)
+        {	
+            if(x=5) printf("Hello");
+        } 
+        printf("World");
+        }
+        </CODE>
+        <OPT1>1. HelloWorld</OPT1>
+        <OPT2>2. World</OPT2>
+        <OPT3>3. WorldHello</OPT3>
+        <OPT4>4. Hello</OPT4>
+    </QUESTIONS>
+</QUIZ>
