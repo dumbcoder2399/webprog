@@ -22,33 +22,9 @@
    </head>
    <body>
 
-
-     
-
-
-
-
-
-
-
-
-
       
 <div class="scp-quizzes-main">
-   <div class="scp-quizzes-data">
-      <div id='demo'></div>
-   </div>
-   
-   
-   <script>
-var parser, xmlDoc;
-var text = "<bookstore><book><title>1. What is the output of the below c code?</title><author>Giada De Laurentiis</author><year>2005</year></book></bookstore>";
 
-parser = new DOMParser();
-xmlDoc = parser.parseFromString(text,"text/xml");
-
-document.getElementById("demo").innerHTML ="<h3> "+ xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue+"</h3>";
-</script>
 
 
 <div class="scp-quizzes-data">
@@ -98,6 +74,8 @@ main()
      <label>4. #pre &lt;file></label> 
  </div>
 </div>
+
+<button onclick="location.href='/home/anushka/sem7ass/webprog/ques.xml';" class="button button1">Answer Key</button>
 
 
 </body></html>
