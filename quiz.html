@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+<title>html elements quiz</title>
+<style>
+body{
+	margin:0px;
+}
+div{
+	font-size:30px;
+	background-color:#d8d8d8;
+}
+div>p{
+margin-top:0px;
+}
+input[type=radio]{
+width:30px;
+height:20px;
+}
+hr{
+margin:0px;
+height:3px;
+}
+input[type=submit]{
+	width:250px;
+	height:50px;
+}
+</style>
+</head>
+<body>
+<h1 style="text-align:center;font-size:50px"> HTML ELEMENTS QUIZ </h1>
+<form method="POST" action="result.php" onsubmit="return check();">
+	<div id="question1">
+		<p>1.Choose the correct HTML element for the largest heading:</p>
+		<input type="radio" name="ans1" value='h1'>&lt;h1&gt;<br>
+		<input type="radio" name="ans1" value='h6'>&lt;h6&gt;<br>
+		<input type="radio" name="ans1" value='h3'>&lt;h3&gt;<br>
+		<input type="radio" name="ans1" value='h2'>&lt;h2&gt;<br>
+	</div>
+	<hr>
+	<div id="question2">
+		<p>2.Choose the correct HTML element to define emphasized text:</p>
+		<input type="radio" name="ans2" value='italic'>&lt;italic&gt;<br>
+		<input type="radio" name="ans2" value='strong'>&lt;strong&gt;<br>
+		<input type="radio" name="ans2" value='em'>&lt;em&gt;<br>
+		<input type="radio" name="ans2" value='i'>&lt;i&gt;<br>
+	</div>
+	<hr>
+	<div id="question3">
+		<p>3.Which HTML element is used to specify a footer for a document or section?</p>
+		<input type="radio" name="ans3" value='bottom'>&lt;bottom&gt;<br>
+		<input type="radio" name="ans3" value='section'>&lt;section&gt;<br>
+		<input type="radio" name="ans3" value='header'>&lt;header&gt;<br>
+		<input type="radio" name="ans3" value='footer'>&lt;footer&gt;<br>
+	</div>
+	<hr>
+	<div id="question4">
+		<p>4.Which HTML element is used to specify a header for a document or section?</p>
+		<input type="radio" name="ans4" value='section'>&lt;section&gt;<br>
+		<input type="radio" name="ans4" value='header'>&lt;header&gt;<br>
+		<input type="radio" name="ans4" value='head'>&lt;head&gt;<br>
+		<input type="radio" name="ans4" value='top'>&lt;top&gt;<br>
+	</div>
+	<hr>
+	<div id="question5">
+		<p>5.Which of the following HTML Elements is used for making any text bold?</p>
+		<input type="radio" name="ans5" value='p'>&lt;p&gt;<br>
+		<input type="radio" name="ans5" value='i'>&lt;i&gt;<br>
+		<input type="radio" name="ans5" value='li'>&lt;li&gt;<br>
+		<input type="radio" name="ans5" value='b'>&lt;b&gt;<br>
+	</div>
+	<center><input type="submit" value="Submit Answers" style="font-size:30px;margin:5px;"></center>
+</form>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<catalog>
+    <fruit>
+    <name>Mango</name>
+    <price>150</price>
+    <stock>15 kg</stock>
+    </fruit>
+    <fruit>
+    <name>Apple</name>
+    <price>180</price>
+    <stock>12 kg</stock>
+    </fruit>
+    <fruit>
+    <name>Grapes</name>
+    <price>120</price>
+    <stock>18 kg</stock>
+    </fruit>
+    </catalog>
