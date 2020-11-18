@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AJAX JSP </title>
+<script type="text/javascript">
+var count = 0;
+function loadDoc() {
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) {
+myFunction(this);
+}
+};
+xhttp.open("GET", "list.xml", true);
+xhttp.send();
+}
+function myFunction(xml) {
+var i;
+var xmlDoc = xml.responseXML;
+var table="<table><tr><th>Title</th><th>Price</th><th>Availablity</th></tr>";
+var x = xmlDoc.getElementsByTagName("fruit");
+ 
+table += "<tr><td>" +
+x[count].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[count].getElementsByTagName("price")[0].childNodes[0].nodeValue +
+"</td><td>" +
+x[count].getElementsByTagName("stock")[0].childNodes[0].nodeValue +
+"</td></tr></table>";
+ 
+count=count+1;
+if(count>2){
+count=0;
+}
+document.getElementById("demo").innerHTML = table;
+}
+</script>
+</head>
+<body bgcolor = "cyan">
+<center><h2>Grocery List</h2>
+<p id="demo">Click Below Button to access the content of xml file without reloading!</p>
+<button onclick="loadDoc()">Next</button></center>
+</body>
+</html>
